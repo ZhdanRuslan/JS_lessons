@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    var user = {
+        firstName: "Vasilij",
+        surname: "Petrov"
+    }
+
+    /*
+    * Define property which
+    * aggregate name and surname
+    * */
+    Object.defineProperty(user, "fullName", {
+        get: function () {
+            return this.firstName + ' ' + this.surname;
+        }
+    });
+
+    alert(user.fullName);
+
+</script>
+</body>
+</html>
