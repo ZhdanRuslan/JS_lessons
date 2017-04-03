@@ -11,7 +11,7 @@ Function.prototype.defer = function(ms) {
             f.apply(context, args);
         }, ms);
     }
-}
+};
 
 function f(a, b) {
     alert( a + b );
