@@ -13,9 +13,23 @@
         }
 
         window.onload = function () {
-            assert(true, "The test suite is running");
-            assert(false, "Fail!");
+            /*assert(true, "The test suite is running");
+            assert(false, "Fail!");*/
+            assert(useless(function () {
+                    return text;
+                }) === text, "The useless function works! " + text);
         };
+
+
+        function useless(callback) {
+            return callback();
+        }
+
+        var text = 'Domo arigato';
+
+
+
+
     </script>
     <style>
         #results li.pass {color: green; }
