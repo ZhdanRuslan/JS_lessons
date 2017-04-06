@@ -9,3 +9,10 @@ function merge(root) {
     }
     return root;
 }
+
+var merged = merge(
+    {name: "Ruslan"},
+    {city: "Kyiv"});
+
+console.log(merged.name == "Ruslan");
+console.log(merged.city == "Kyiv");
