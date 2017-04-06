@@ -9,3 +9,6 @@ function smallest(arr) {
 function biggest(arr) {
     return Math.max.apply(Math, arr);
 }
+
+console.log(smallest([3, 15, 17, 25, 1, -4]));
+console.log(biggest([3, 15, 17, 25, 1, -4]));
