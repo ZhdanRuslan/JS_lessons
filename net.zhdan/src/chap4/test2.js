@@ -5,3 +5,7 @@
 function smallest(arr) {
     return Math.min.apply(Math, arr);
 }
+
+function biggest(arr) {
+    return Math.max.apply(Math, arr);
+}
