@@ -29,10 +29,18 @@ function sequence(start, step) {
 
     return function () {
 
-        count++;
-
         if (step) {
             count = count + step;
+        } else {
+            count++;
         }
+
+        return count;
     }
 }
+
+var generator = sequence(10, 3);
+// var generator2 = sequence(7, 1);
+
+console.log(generator()); // 10
+console.log(generator()); // 13
