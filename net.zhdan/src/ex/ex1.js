@@ -7,17 +7,19 @@
 
 function sequence(start, step) {
 
-    if (!start) {
-        start = 0;
-    }
+    // if (!start) {
+    //     start = 0;
+    // }
+    //
+    // if (!step) {
+    //     step = 1;
+    // }
 
-    if (!step) {
-        step = 1;
-    }
+    start = start || 0;
+    step = step || 1;
 
     start -= step;
 
-    
     return function () {
 
         return start += step;
