@@ -7,14 +7,6 @@
 
 function sequence(start, step) {
 
-    // if (!start) {
-    //     start = 0;
-    // }
-    //
-    // if (!step) {
-    //     step = 1;
-    // }
-
     start = start || 0;
     step = step || 1;
 
