@@ -21,10 +21,10 @@
 
 function sequence(start, step) {
 
-    var count = 0;
+    var count = start;
 
-    if (start) {
-        count = start;
+    if (step === undefined){
+        step = 1;
     }
 
     return function () {
